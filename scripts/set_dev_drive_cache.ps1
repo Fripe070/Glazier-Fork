@@ -1,4 +1,5 @@
 setx.exe /M 'PIP_CACHE_DIR' 'D:\.cache\pip'
+setx.exe /M 'UV_CACHE_DIR' 'D:\.cache\uv'
 setx.exe /M 'npm_config_cache' 'D:\.cache\npm'
 setx.exe /M 'NUGET_PACKAGES' 'D:\.cache\nuget'
 setx.exe /M 'CARGO_HOME' 'D:\.cache\cargo'
