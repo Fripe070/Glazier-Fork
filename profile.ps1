@@ -12,7 +12,7 @@ Function Update-EnvPath {
 }
 
 Function New-PythonVenv {
-    python -m venv venv
+    uv venv
     .\.venv\Scripts\activate.ps1
 }
 
@@ -23,7 +23,7 @@ Set-Alias -Name 'venv' -Value New-PythonVenv
 Set-Alias -Name 'touch' -Value New-Item
 Set-Alias -Name 'bin' -Value Remove-ItemSafely
 Set-Alias -Name 'which' -Value Get-Command
-Set-Alias -Name 'activate' -Value '.\venv\Scripts\activate.ps1'
+Set-Alias -Name 'activate' -Value '.\.venv\Scripts\activate.ps1'
 Set-Alias -Name 'pt' -Value 'ptpython'
 
 #34de4b3d-13a8-4540-b76d-b9e8d3851756 PowerToys CommandNotFound module
