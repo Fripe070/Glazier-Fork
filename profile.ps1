@@ -21,7 +21,7 @@ Set-Alias -Name 'refreshenv' -Value Update-EnvPath
 Set-Alias -Name 'venv' -Value New-PythonVenv
 
 Set-Alias -Name 'touch' -Value New-Item
-Set-Alias -Name 'bin' -Value Remove-ItemSafely
+Set-Alias -Name 'rm' -Value Remove-ItemSafely -Force
 Set-Alias -Name 'which' -Value Get-Command
 Set-Alias -Name 'activate' -Value '.\.venv\Scripts\activate.ps1'
 Set-Alias -Name 'pt' -Value 'ptpython'
